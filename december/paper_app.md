@@ -138,4 +138,16 @@ like to be able to be able to write the following:
   + Also essential: being able to write up examples for each paper.
   How can this work?  I don't know what "examples" look like a priori?
 
-- 
+The view goes something like: paper on the left, notes on the right:
+
+- When you open up a paper, the summary pops up, as you read it notes get highlighted.
+- You can hyperlink into the actual text of the paper.  I need to think of a smart way to do this:
+  + For now maybe I can simply stick with [page, paragrph, word]
+  + Pressing control will give the current point (page paragraph word) in the top left,
+  + clicking while control automatically links to the highlighted selection.
+  + type Point = int * int * int
+  + 
+  + data Selection = 
+  +     | Point of Point
+  +     | Region of Point * Point
+
